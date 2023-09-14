@@ -139,8 +139,31 @@ class NewProfileVC: UIViewController, UITextFieldDelegate {
         }else if txtPassword.text?.isEmpty == true{
             self.displayAlert(withTitle: "Error", andMessage: "Please enter your password")
         }
+        register()
     }
     
+    
+    func register(){
+ 
+        
+        let loginParameters = ["first_name": "hdcvksd22", "last_name": "sdfsd11","email":"test11@gmail.com","phone":"3629083022",  "address":"jhsdhf2"]
+        
+        AIServiceManager.sharedManager.callPostApi(API.register, responseType: RegisterResponse.self, parameters: loginParameters) { response in
+            switch response {
+                
+            case .success(let user):
+                print("response",response)
+                print("user Register", user)
+                break
+                // Handle user object
+            case .failure(let error):
+                print("ERROR: Register",error)
+                break
+                // Handle error
+            }
+        }
+    }
+
     
     
     func displayAlert(withTitle title: String, andMessage msg: String) {

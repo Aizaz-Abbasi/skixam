@@ -76,8 +76,29 @@ class TheEssentialsVC: UIViewController {
     }
     
     @objc func gotoApparelEssentials(){
-        performSegue(withIdentifier: SMacros.kSegueApparelEssentials, sender: self)
+        login()
+        
     }
     
+    
+    func login(){
+        
+        let loginParameters = ["login": "admin@gmail.com", "password": "password"]
+        
+        AIServiceManager.sharedManager.callPostApi(API.login, responseType: LoginResponse.self, parameters: loginParameters) { response in
+            switch response {
+                
+            case .success(let user):
+                print("response",response)
+                print("user Login", user)
+                break
+                // Handle user object
+            case .failure(let error):
+                print("ERROR: Login",error)
+                break
+                // Handle error
+            }
+        }
+    }
     
 }

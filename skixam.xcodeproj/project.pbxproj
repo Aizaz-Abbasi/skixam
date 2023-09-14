@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BFEDCB067A19DCA097050EE /* Pods_skixam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5888CAC8A6CB95A84BF3AD7E /* Pods_skixam.framework */; };
+		D001D2842AB22C0C00A06534 /* AIServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D001D2832AB22C0C00A06534 /* AIServiceManager.swift */; };
+		D001D2872AB23F6100A06534 /* AIReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D001D2862AB23F6100A06534 /* AIReachabilityManager.swift */; };
+		D001D28A2AB242CB00A06534 /* AILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D001D2892AB242CB00A06534 /* AILoader.swift */; };
+		D001D2902AB244FD00A06534 /* AIServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D001D28D2AB244FD00A06534 /* AIServiceConstants.swift */; };
+		D08C6A822AB375D30012E80C /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C6A812AB375D30012E80C /* Register.swift */; };
+		D08C6A852AB37EDF0012E80C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C6A842AB37EDF0012E80C /* API.swift */; };
+		D08C6A872AB382EE0012E80C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C6A862AB382EE0012E80C /* Login.swift */; };
+		D08C6A892AB389EC0012E80C /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C6A882AB389EC0012E80C /* Global.swift */; };
 		D914EAC82AAB5369003979FB /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D914EAC72AAB5369003979FB /* UIView+Extensions.swift */; };
 		D9466BF72A95251400B10750 /* SF-Compact-Text-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9466BF62A95251400B10750 /* SF-Compact-Text-Regular.ttf */; };
 		D9466BFA2A95946A00B10750 /* SF-Compact-Text-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9466BF92A95946A00B10750 /* SF-Compact-Text-Medium.ttf */; };
@@ -39,6 +48,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38A35C39C36B1A92DCFD9066 /* Pods-skixam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skixam.release.xcconfig"; path = "Target Support Files/Pods-skixam/Pods-skixam.release.xcconfig"; sourceTree = "<group>"; };
+		5888CAC8A6CB95A84BF3AD7E /* Pods_skixam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skixam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D725F85FFB534DCBAB36C42 /* Pods-skixam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skixam.debug.xcconfig"; path = "Target Support Files/Pods-skixam/Pods-skixam.debug.xcconfig"; sourceTree = "<group>"; };
+		D001D2832AB22C0C00A06534 /* AIServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIServiceManager.swift; sourceTree = "<group>"; };
+		D001D2862AB23F6100A06534 /* AIReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIReachabilityManager.swift; sourceTree = "<group>"; };
+		D001D2892AB242CB00A06534 /* AILoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AILoader.swift; sourceTree = "<group>"; };
+		D001D28D2AB244FD00A06534 /* AIServiceConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIServiceConstants.swift; sourceTree = "<group>"; };
+		D08C6A812AB375D30012E80C /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		D08C6A842AB37EDF0012E80C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		D08C6A862AB382EE0012E80C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		D08C6A882AB389EC0012E80C /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		D914EAC72AAB5369003979FB /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		D9466BF62A95251400B10750 /* SF-Compact-Text-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Regular.ttf"; sourceTree = "<group>"; };
 		D9466BF92A95946A00B10750 /* SF-Compact-Text-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Medium.ttf"; sourceTree = "<group>"; };
@@ -77,12 +97,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BFEDCB067A19DCA097050EE /* Pods_skixam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A159E7A876619E8936BE5905 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5888CAC8A6CB95A84BF3AD7E /* Pods_skixam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B03BA3483417F889112D1193 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D725F85FFB534DCBAB36C42 /* Pods-skixam.debug.xcconfig */,
+				38A35C39C36B1A92DCFD9066 /* Pods-skixam.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D001D2822AB22C0C00A06534 /* AIServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				D001D2832AB22C0C00A06534 /* AIServiceManager.swift */,
+			);
+			path = AIServiceManager;
+			sourceTree = "<group>";
+		};
+		D001D2852AB23F6100A06534 /* AIReachabilityManager */ = {
+			isa = PBXGroup;
+			children = (
+				D001D2862AB23F6100A06534 /* AIReachabilityManager.swift */,
+			);
+			path = AIReachabilityManager;
+			sourceTree = "<group>";
+		};
+		D001D2882AB242CB00A06534 /* AILoader */ = {
+			isa = PBXGroup;
+			children = (
+				D001D2892AB242CB00A06534 /* AILoader.swift */,
+			);
+			path = AILoader;
+			sourceTree = "<group>";
+		};
+		D001D28B2AB244FD00A06534 /* AIHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				D001D28D2AB244FD00A06534 /* AIServiceConstants.swift */,
+			);
+			path = AIHeaders;
+			sourceTree = "<group>";
+		};
+		D08C6A802AB3754E0012E80C /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				D08C6A812AB375D30012E80C /* Register.swift */,
+				D08C6A862AB382EE0012E80C /* Login.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		D08C6A832AB37EC40012E80C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D08C6A842AB37EDF0012E80C /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		D914EAC62AAB5340003979FB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +224,12 @@
 		D97D09C22AAF3FD400EF5EBC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D08C6A832AB37EC40012E80C /* API */,
+				D08C6A802AB3754E0012E80C /* DataModels */,
+				D001D28B2AB244FD00A06534 /* AIHeaders */,
+				D001D2882AB242CB00A06534 /* AILoader */,
+				D001D2852AB23F6100A06534 /* AIReachabilityManager */,
+				D001D2822AB22C0C00A06534 /* AIServiceManager */,
 				D97D09C32AAF3FDD00EF5EBC /* AppUtils */,
 			);
 			path = Utils;
@@ -146,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				D97D09C42AAF404C00EF5EBC /* AppUtils.swift */,
+				D08C6A882AB389EC0012E80C /* Global.swift */,
 			);
 			path = AppUtils;
 			sourceTree = "<group>";
@@ -163,6 +257,8 @@
 			children = (
 				D9BD49F92A94230F003EBB78 /* skixam */,
 				D9BD49F82A94230F003EBB78 /* Products */,
+				B03BA3483417F889112D1193 /* Pods */,
+				A159E7A876619E8936BE5905 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -351,9 +447,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9BD4A0B2A942310003EBB78 /* Build configuration list for PBXNativeTarget "skixam" */;
 			buildPhases = (
+				59A7D66DF1DDC782A2609E07 /* [CP] Check Pods Manifest.lock */,
 				D9BD49F32A94230F003EBB78 /* Sources */,
 				D9BD49F42A94230F003EBB78 /* Frameworks */,
 				D9BD49F52A94230F003EBB78 /* Resources */,
+				BE920F86CE5C1E7B8678AEF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -414,6 +512,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		59A7D66DF1DDC782A2609E07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-skixam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE920F86CE5C1E7B8678AEF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-skixam/Pods-skixam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-skixam/Pods-skixam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-skixam/Pods-skixam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9BD49F32A94230F003EBB78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -422,13 +562,20 @@
 				D914EAC82AAB5369003979FB /* UIView+Extensions.swift in Sources */,
 				D97D09C52AAF404C00EF5EBC /* AppUtils.swift in Sources */,
 				D97D09C12AAF16C800EF5EBC /* Planning3VC.swift in Sources */,
+				D08C6A872AB382EE0012E80C /* Login.swift in Sources */,
 				D9BD4A132A942B6D003EBB78 /* SplashScreenVC.swift in Sources */,
 				D9BD4A232A943084003EBB78 /* BackPackEssentialsVC.swift in Sources */,
 				D9BD4A202A943026003EBB78 /* ApparelEssentialsResultsVC.swift in Sources */,
+				D08C6A852AB37EDF0012E80C /* API.swift in Sources */,
+				D08C6A892AB389EC0012E80C /* Global.swift in Sources */,
 				D94A3B582AA96E46009D9163 /* AccidentsVC.swift in Sources */,
+				D001D28A2AB242CB00A06534 /* AILoader.swift in Sources */,
+				D001D2842AB22C0C00A06534 /* AIServiceManager.swift in Sources */,
 				D98F4A1D2AAA419700D593CE /* TrackVC.swift in Sources */,
+				D001D2902AB244FD00A06534 /* AIServiceConstants.swift in Sources */,
 				D9BD4A1A2A942EFC003EBB78 /* TheEssentialsVC.swift in Sources */,
 				D9BD4A1D2A942F9D003EBB78 /* ApparelEssentialsVC.swift in Sources */,
+				D08C6A822AB375D30012E80C /* Register.swift in Sources */,
 				D956193B2A9E502900D498D3 /* NewProfileVC.swift in Sources */,
 				D9FC4C782A96C1B000D48AD7 /* QuickTest2VC.swift in Sources */,
 				D9FC4C7E2A97FCD000D48AD7 /* QRCodeEndVC.swift in Sources */,
@@ -438,6 +585,7 @@
 				D9F893E72AACDE1000881314 /* ThePiste2VC.swift in Sources */,
 				D9BD49FD2A94230F003EBB78 /* SceneDelegate.swift in Sources */,
 				D94A3B552AA967CA009D9163 /* MechanicalLiftsVC.swift in Sources */,
+				D001D2872AB23F6100A06534 /* AIReachabilityManager.swift in Sources */,
 				D9FC4C7B2A96D4DB00D48AD7 /* QuickTest21.swift in Sources */,
 				D9FC4C812A98072200D48AD7 /* SMacros.swift in Sources */,
 				D9F1FACA2AADB3EE008ADE2F /* TestRapideVC.swift in Sources */,
@@ -582,6 +730,7 @@
 		};
 		D9BD4A0C2A942310003EBB78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D725F85FFB534DCBAB36C42 /* Pods-skixam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -611,6 +760,7 @@
 		};
 		D9BD4A0D2A942310003EBB78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A35C39C36B1A92DCFD9066 /* Pods-skixam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
