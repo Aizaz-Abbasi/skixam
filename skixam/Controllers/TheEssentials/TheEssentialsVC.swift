@@ -1,104 +1,29 @@
 //
-//  LesEssentielsVC.swift
+//  TheEssentialsVC.swift
 //  skixam
 //
-//  Created by Usman Ramzan on 22/08/2023.
+//  Created by Usman Ramzan on 16/09/2023.
 //
 
 import UIKit
 
 class TheEssentialsVC: UIViewController {
-    
-    // MARK: -     Outlets:-
-    
-    @IBOutlet weak var cmdBack: UIImageView!
-    @IBOutlet weak var cmdContinue: UIView!
-    
-    @IBOutlet weak var viewBGEmail: UIView!
-    @IBOutlet weak var viewBGPassword: UIView!
-    
-    @IBOutlet weak var lblHelloPaulVictor: UILabel!
-    @IBOutlet weak var lblTodaysWeather: UILabel!
-    
-    @IBOutlet weak var lblEmail: UILabel!
-    @IBOutlet weak var lblPassword: UILabel!
-    
-    @IBOutlet weak var lblKContinue: UILabel!
-    
-    
-    
-    // MARK: -     ViewDidLoad:-
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        addCornerRadius()
-        tapGestures()
+
+        // Do any additional setup after loading the view.
     }
     
-    
-    
-    // MARK: -     Corner Radius:-
-    
-    func addCornerRadius(){
-        
-        viewBGEmail.layer.borderWidth = 2
-        viewBGEmail.layer.borderColor = UIColor(hex: "#012CB1").cgColor
-        viewBGEmail.layer.cornerRadius = 10
-        
-        viewBGPassword.layer.borderWidth = 2
-        viewBGPassword.layer.borderColor = UIColor(hex: "#012CB1").cgColor
-        viewBGPassword.layer.cornerRadius = 10
-        
-        cmdContinue.layer.cornerRadius = 10
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
-    
-    
-    // MARK: -     Tap Gestures:-
-    
-    func tapGestures(){
-        
-        let tgBack = UITapGestureRecognizer(target: self, action: #selector(gotoBack))
-        cmdBack.isUserInteractionEnabled = true
-        cmdBack.addGestureRecognizer(tgBack)
-        
-        let tgContinue = UITapGestureRecognizer(target: self, action: #selector(gotoApparelEssentials))
-        cmdContinue.isUserInteractionEnabled = true
-        cmdContinue.addGestureRecognizer(tgContinue)
-    }
-    
-    
-    
-    // MARK: -     Custom Functions:-
-    
-    @objc func gotoBack(){
-        self.navigationController?.popViewController(animated: true)
-    }
-    
-    @objc func gotoApparelEssentials(){
-        login()
-        
-    }
-    
-    
-    func login(){
-        
-        let loginParameters = ["login": "admin@gmail.com", "password": "password"]
-        
-        AIServiceManager.sharedManager.callPostApi(API.login, responseType: LoginResponse.self, parameters: loginParameters) { response in
-            switch response {
-                
-            case .success(let user):
-                print("response",response)
-                print("user Login", user)
-                break
-                // Handle user object
-            case .failure(let error):
-                print("ERROR: Login",error)
-                break
-                // Handle error
-            }
-        }
-    }
-    
+    */
+
 }

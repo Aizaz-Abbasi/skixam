@@ -27,6 +27,7 @@
 		D97D09C12AAF16C800EF5EBC /* Planning3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D09C02AAF16C800EF5EBC /* Planning3VC.swift */; };
 		D97D09C52AAF404C00EF5EBC /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D09C42AAF404C00EF5EBC /* AppUtils.swift */; };
 		D98F4A1D2AAA419700D593CE /* TrackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F4A1C2AAA419700D593CE /* TrackVC.swift */; };
+		D9B74ABD2AB5C9F500FABB15 /* TheEssentialsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B74ABC2AB5C9F500FABB15 /* TheEssentialsVC.swift */; };
 		D9BD49FB2A94230F003EBB78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD49FA2A94230F003EBB78 /* AppDelegate.swift */; };
 		D9BD49FD2A94230F003EBB78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD49FC2A94230F003EBB78 /* SceneDelegate.swift */; };
 		D9BD4A022A94230F003EBB78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BD4A002A94230F003EBB78 /* Main.storyboard */; };
@@ -34,7 +35,7 @@
 		D9BD4A072A942310003EBB78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BD4A052A942310003EBB78 /* LaunchScreen.storyboard */; };
 		D9BD4A132A942B6D003EBB78 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD4A122A942B6D003EBB78 /* SplashScreenVC.swift */; };
 		D9BD4A172A942DF9003EBB78 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD4A162A942DF9003EBB78 /* HomePageVC.swift */; };
-		D9BD4A1A2A942EFC003EBB78 /* TheEssentialsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD4A192A942EFC003EBB78 /* TheEssentialsVC.swift */; };
+		D9BD4A1A2A942EFC003EBB78 /* ExistingProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD4A192A942EFC003EBB78 /* ExistingProfileVC.swift */; };
 		D9BD4A1D2A942F9D003EBB78 /* ApparelEssentialsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD4A1C2A942F9D003EBB78 /* ApparelEssentialsVC.swift */; };
 		D9BD4A202A943026003EBB78 /* ApparelEssentialsResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD4A1F2A943026003EBB78 /* ApparelEssentialsResultsVC.swift */; };
 		D9BD4A232A943084003EBB78 /* BackPackEssentialsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD4A222A943084003EBB78 /* BackPackEssentialsVC.swift */; };
@@ -70,6 +71,7 @@
 		D97D09C02AAF16C800EF5EBC /* Planning3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planning3VC.swift; sourceTree = "<group>"; };
 		D97D09C42AAF404C00EF5EBC /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		D98F4A1C2AAA419700D593CE /* TrackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackVC.swift; sourceTree = "<group>"; };
+		D9B74ABC2AB5C9F500FABB15 /* TheEssentialsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheEssentialsVC.swift; sourceTree = "<group>"; };
 		D9BD49F72A94230F003EBB78 /* skixam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skixam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BD49FA2A94230F003EBB78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9BD49FC2A94230F003EBB78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,7 +81,7 @@
 		D9BD4A082A942310003EBB78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9BD4A122A942B6D003EBB78 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 		D9BD4A162A942DF9003EBB78 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
-		D9BD4A192A942EFC003EBB78 /* TheEssentialsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheEssentialsVC.swift; sourceTree = "<group>"; };
+		D9BD4A192A942EFC003EBB78 /* ExistingProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistingProfileVC.swift; sourceTree = "<group>"; };
 		D9BD4A1C2A942F9D003EBB78 /* ApparelEssentialsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApparelEssentialsVC.swift; sourceTree = "<group>"; };
 		D9BD4A1F2A943026003EBB78 /* ApparelEssentialsResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApparelEssentialsResultsVC.swift; sourceTree = "<group>"; };
 		D9BD4A222A943084003EBB78 /* BackPackEssentialsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackPackEssentialsVC.swift; sourceTree = "<group>"; };
@@ -252,6 +254,14 @@
 			path = Track;
 			sourceTree = "<group>";
 		};
+		D9B74ABB2AB5C9DC00FABB15 /* TheEssentials */ = {
+			isa = PBXGroup;
+			children = (
+				D9B74ABC2AB5C9F500FABB15 /* TheEssentialsVC.swift */,
+			);
+			path = TheEssentials;
+			sourceTree = "<group>";
+		};
 		D9BD49EE2A94230F003EBB78 = {
 			isa = PBXGroup;
 			children = (
@@ -317,8 +327,9 @@
 			children = (
 				D9BD4A142A942DC2003EBB78 /* SplashScreen */,
 				D95619392A9E500B00D498D3 /* NewProfile */,
+				D9B74ABB2AB5C9DC00FABB15 /* TheEssentials */,
 				D9BD4A152A942DDC003EBB78 /* HomePage */,
-				D9BD4A182A942EE3003EBB78 /* TheEssentials */,
+				D9BD4A182A942EE3003EBB78 /* ExistingProfile */,
 				D94A3B532AA967B3009D9163 /* MechanicalLifts */,
 				D94A3B562AA96E30009D9163 /* Accidents */,
 				D9BD4A1B2A942F86003EBB78 /* ApparelEssentials */,
@@ -352,12 +363,12 @@
 			path = HomePage;
 			sourceTree = "<group>";
 		};
-		D9BD4A182A942EE3003EBB78 /* TheEssentials */ = {
+		D9BD4A182A942EE3003EBB78 /* ExistingProfile */ = {
 			isa = PBXGroup;
 			children = (
-				D9BD4A192A942EFC003EBB78 /* TheEssentialsVC.swift */,
+				D9BD4A192A942EFC003EBB78 /* ExistingProfileVC.swift */,
 			);
-			path = TheEssentials;
+			path = ExistingProfile;
 			sourceTree = "<group>";
 		};
 		D9BD4A1B2A942F86003EBB78 /* ApparelEssentials */ = {
@@ -571,9 +582,10 @@
 				D94A3B582AA96E46009D9163 /* AccidentsVC.swift in Sources */,
 				D001D28A2AB242CB00A06534 /* AILoader.swift in Sources */,
 				D001D2842AB22C0C00A06534 /* AIServiceManager.swift in Sources */,
+				D9B74ABD2AB5C9F500FABB15 /* TheEssentialsVC.swift in Sources */,
 				D98F4A1D2AAA419700D593CE /* TrackVC.swift in Sources */,
 				D001D2902AB244FD00A06534 /* AIServiceConstants.swift in Sources */,
-				D9BD4A1A2A942EFC003EBB78 /* TheEssentialsVC.swift in Sources */,
+				D9BD4A1A2A942EFC003EBB78 /* ExistingProfileVC.swift in Sources */,
 				D9BD4A1D2A942F9D003EBB78 /* ApparelEssentialsVC.swift in Sources */,
 				D08C6A822AB375D30012E80C /* Register.swift in Sources */,
 				D956193B2A9E502900D498D3 /* NewProfileVC.swift in Sources */,
@@ -736,7 +748,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 53Z7K2RPCH;
+				DEVELOPMENT_TEAM = M6NS2BYW8U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = skixam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -750,7 +762,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.skixam.app.skixam1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skixam.app.skixam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -766,7 +778,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 53Z7K2RPCH;
+				DEVELOPMENT_TEAM = M6NS2BYW8U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = skixam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -780,7 +792,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.skixam.app.skixam1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skixam.app.skixam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

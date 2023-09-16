@@ -14,8 +14,9 @@ class SplashScreenVC: UIViewController {
     @IBOutlet weak var viewBGGetStarted: UIView!
     @IBOutlet weak var viewBGAlreadyHaveAnAccount: UIView!
    
+    @IBOutlet weak var lblKCreateAccount: UILabel!
+    @IBOutlet weak var lblKAlreadyHaveAnAccount: UILabel!
     
-      
     
     
     
@@ -43,15 +44,27 @@ class SplashScreenVC: UIViewController {
 // MARK: -     Tap Gestures:-
 
     func tapGestures(){
+        
         let tgGetStarted = UITapGestureRecognizer(target: self, action: #selector(gotoHomePage))
         viewBGGetStarted.isUserInteractionEnabled = true
         viewBGGetStarted.addGestureRecognizer(tgGetStarted)
+        
+        let tgSignIn = UITapGestureRecognizer(target: self, action: #selector(gotoLogin))
+        viewBGAlreadyHaveAnAccount.isUserInteractionEnabled = true
+        viewBGAlreadyHaveAnAccount.addGestureRecognizer(tgSignIn)
+        
     }
+    
+    
     
     
 // MARK: -      Custom Functions:-
     
     @objc func gotoHomePage(){
         self.performSegue(withIdentifier: SMacros.kSegueNewProfile, sender: self)
+    }
+    
+    @objc func gotoLogin(){
+        self.performSegue(withIdentifier: SMacros.kSegueLogin, sender: self)
     }
 }

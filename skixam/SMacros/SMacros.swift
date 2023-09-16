@@ -26,4 +26,6 @@ class SMacros{
         static let kSegueQRCodeEnd = "segueQRCodeEnd"
         static let kSegueAccidents = "segueAccidents"
         static let kSegueNewProfile = "segueNewProfile"
+        static let kSegueLogin = "segueLogin"
+    
 }

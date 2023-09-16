@@ -12,6 +12,10 @@ class NewProfileVC: UIViewController, UITextFieldDelegate {
     // MARK: -       Outlets: -
     
     @IBOutlet weak var cmdBack: UIImageView!
+    @IBOutlet weak var cmdContinue: UIView!
+    
+    @IBOutlet weak var lblKWelcomeToSkixam: UILabel!
+    @IBOutlet weak var lblKLetsGoItWontTakeLong: UILabel!
     
     @IBOutlet weak var viewBGName: UIView!
     @IBOutlet weak var viewBGDateOfBirth: UIView!
@@ -19,10 +23,7 @@ class NewProfileVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var viewBGLevel: UIView!
     @IBOutlet weak var viewBGEmail: UIView!
     @IBOutlet weak var viewBGPassword: UIView!
-    @IBOutlet weak var cmdContinue: UIView!
     
-    @IBOutlet weak var lblKWelcomeToSkixam: UILabel!
-    @IBOutlet weak var lblKLetsGoItWontTakeLong: UILabel!
     @IBOutlet weak var lblKContinue: UILabel!
     @IBOutlet weak var lblBusiness: UILabel!
     @IBOutlet weak var lblLevel: UILabel!
@@ -31,6 +32,23 @@ class NewProfileVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txtDateOfBirth: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    
+    
+    // START Expanding Core Business
+    @IBOutlet weak var viewBGExpandCoreBusiness: UIView!
+    @IBOutlet weak var viewBGSelectionCoreBusiness: UIView!
+    @IBOutlet weak var viewBGSki: UIView!
+    @IBOutlet weak var viewBGSnowboard: UIView!
+    @IBOutlet weak var viewBGSkiNordique: UIView!
+    @IBOutlet weak var viewBGParaglidingFlight: UIView!
+    
+    @IBOutlet weak var lblSelectionCoreBusiness: UILabel!
+    @IBOutlet weak var lblSki: UILabel!
+    @IBOutlet weak var lblSnowboard: UILabel!
+    @IBOutlet weak var lblSkiNordique: UILabel!
+    @IBOutlet weak var lblParaglidingFlight: UILabel!
+    // END Expanding Core Business
+
     
     
     
@@ -47,6 +65,8 @@ class NewProfileVC: UIViewController, UITextFieldDelegate {
         txtPassword.delegate = self
         
         txtPassword.isSecureTextEntry = true
+        
+        viewBGExpandCoreBusiness.isHidden = true
         
         setCornerRadius()
         tapGestures()
@@ -68,6 +88,10 @@ class NewProfileVC: UIViewController, UITextFieldDelegate {
         viewBGCoreBusiness.layer.borderWidth = 2
         viewBGCoreBusiness.layer.borderColor = UIColor(hex: "#012CB1").cgColor
         viewBGCoreBusiness.layer.cornerRadius = 10
+        
+        viewBGExpandCoreBusiness.layer.borderWidth = 2
+        viewBGExpandCoreBusiness.layer.borderColor = UIColor(hex: "#012CB1").cgColor
+        viewBGExpandCoreBusiness.layer.cornerRadius = 10
         
         viewBGLevel.layer.borderWidth = 2
         viewBGLevel.layer.borderColor = UIColor(hex: "#012CB1").cgColor
@@ -100,6 +124,15 @@ class NewProfileVC: UIViewController, UITextFieldDelegate {
         let tgHideKeyboard = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         view.isUserInteractionEnabled = true
         view.addGestureRecognizer(tgHideKeyboard)
+        
+        let tgShowCoreBusiness = UITapGestureRecognizer(target: self, action: #selector(ExpandCoreBusiness))
+        viewBGCoreBusiness.isUserInteractionEnabled = true
+        viewBGCoreBusiness.addGestureRecognizer(tgShowCoreBusiness)
+        
+        let tgSelectSki = UITapGestureRecognizer(target: self, action: #selector(SelectSki))
+        viewBGSki.isUserInteractionEnabled = true
+        viewBGSki.addGestureRecognizer(tgSelectSki)
+        
     }
     
     
@@ -116,6 +149,16 @@ class NewProfileVC: UIViewController, UITextFieldDelegate {
         txtEmail.resignFirstResponder()
         txtPassword.resignFirstResponder()
     }
+    
+    @objc func ExpandCoreBusiness(){
+        viewBGExpandCoreBusiness.isHidden = false
+    }
+    
+    @objc func SelectSki(){
+        
+    }
+    
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         

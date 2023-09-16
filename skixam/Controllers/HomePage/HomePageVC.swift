@@ -21,6 +21,14 @@ class HomePageVC: UIViewController {
     @IBOutlet weak var viewBGAccidents: UIView!
     @IBOutlet weak var viewBGRapidTest: UIView!
     
+    
+    @IBOutlet weak var txtKTheEssentials: UILabel!
+    @IBOutlet weak var txtKMechanicalLifts: UILabel!
+    @IBOutlet weak var txtKTheTrail: UILabel!
+    @IBOutlet weak var txtKAccidents: UILabel!
+    @IBOutlet weak var txtKRapidTest: UILabel!
+    @IBOutlet weak var txtKActivities: UILabel!
+    
     @IBOutlet weak var viewBGActivities: UIView!
     
     
@@ -69,6 +77,6 @@ class HomePageVC: UIViewController {
     }
     
     @objc func gotoTheEssentials(){
-        performSegue(withIdentifier: SMacros.kSegueTheEssentials, sender: self)
+        performSegue(withIdentifier: "segueTheEssentials", sender: self)
     }
 }
