@@ -8,8 +8,8 @@
 import Foundation
 
 struct RegisterResponse: Codable {
-    let success: Bool
-    let message: String
+    //let success: Bool?
+    let message: String?
     //let data: [String]
     
 //    enum CodingKeys: String, CodingKey {

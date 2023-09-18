@@ -189,22 +189,26 @@ class NewProfileVC: UIViewController, UITextFieldDelegate {
     func register(){
  
         
-        let loginParameters = ["first_name": "hdcvksd22", "last_name": "sdfsd11","email":"test11@gmail.com","phone":"3629083022",  "address":"jhsdhf2"]
+        let loginParameters = ["first_name": "hdcvksd2222", "last_name": "sdfsd1122","email":"test1122@gmail.com","phone":"3629083023",  "address":"jhsdhf233"]
         
         AIServiceManager.sharedManager.callPostApi(API.register, responseType: RegisterResponse.self, parameters: loginParameters) { response in
             switch response {
                 
             case .success(let user):
                 print("response",response)
-                print("user Register", user)
+                print("user Login", user)
+                HIDE_CUSTOM_LOADER()
+               // self.performSegue(withIdentifier: "segueHomePage", sender: self)
                 break
                 // Handle user object
             case .failure(let error):
-                print("ERROR: Register",error)
+                print("ERROR: Login",error)
                 break
                 // Handle error
             }
         }
+        
+        
     }
 
     

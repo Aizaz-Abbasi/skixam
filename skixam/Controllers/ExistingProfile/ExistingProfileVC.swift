@@ -118,6 +118,7 @@ class ExistingProfileVC: UIViewController, UITextFieldDelegate {
             case .success(let user):
                 print("response",response)
                 print("user Login", user)
+                HIDE_CUSTOM_LOADER()
                 self.performSegue(withIdentifier: "segueHomePage", sender: self)
                 break
                 // Handle user object
